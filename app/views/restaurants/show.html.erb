@@ -7,5 +7,6 @@
             restaurant_path(@restaurant),
             method: :delete,
             data: { confirm: "Are you sure?" } %>
+<p>To leave a review, <%= link_to 'click here', new_restaurant_review_path(@restaurant) %></p>
 <p>To edit restaurant, <%= link_to 'click here', edit_restaurant_path %></p>
 <p>To go back to home, <%= link_to 'click here', restaurants_path %></p>
