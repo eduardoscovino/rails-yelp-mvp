@@ -2,5 +2,6 @@
 <p><%= @restaurant.address %></p>
 <p><%= @restaurant.phone_number %></p>
 <p><%= @restaurant.category %></p>
-<br><br>
+
+<p>To edit restaurant, <%= link_to 'click here', edit_restaurant_path %></p>
 <p>To go back to home, <%= link_to 'click here', restaurants_path %></p>
