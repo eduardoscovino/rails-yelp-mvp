@@ -3,5 +3,9 @@
 <p><%= @restaurant.phone_number %></p>
 <p><%= @restaurant.category %></p>
 
+<%= link_to "Delete #{@restaurant.name}",
+            restaurant_path(@restaurant),
+            method: :delete,
+            data: { confirm: "Are you sure?" } %>
 <p>To edit restaurant, <%= link_to 'click here', edit_restaurant_path %></p>
 <p>To go back to home, <%= link_to 'click here', restaurants_path %></p>
